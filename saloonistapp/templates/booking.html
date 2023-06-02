@@ -1,0 +1,44 @@
+{% extends 'home_base.html' %}
+{% load static %}
+{% block body %}
+          <div class="container">
+                    <div class="row justify-content-center ">
+                      <div class="col-md-6">
+                        <div class="card bg-dark">
+                          <div class="card-body">
+                              
+                              <form role="form" name="form1" action="{% url 'booking'%}" method="post">
+                                        {% csrf_token %}
+                                <div class="form-group">
+                                  {% comment %} <label for="name">Name:</label>
+                                  <input type="text" class="form-control" id="name" placeholder="Enter your name" required name="name"> {% endcomment %}
+                                
+                                        <label for="phone">Contact No:</label>
+                                        <input type="text" class="form-control" id="phone" placeholder="Enter your phone no."  required name="phone">
+
+                                        <label for="gender">Gender:</label>
+                                        <select name="gender" required class="form-control" id="gender">
+                                        <option value="" selected>--Select--</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="kids">Kids</option>
+                                        </select>
+                               
+                                        <label for="date">Preferred Date:</label>
+                                        <input type="date" class="form-control" id="date" required placeholder="Enter your date" name="date">
+                                     
+                                        <label for="time">Preferred Time:</label>
+                                        <input type="time" class="form-control" id="date" required placeholder="Enter your time"  name="time">
+
+                                        
+                                  
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                              </form>
+                          </div>
+                        </div>
+                      </div>
+</div>
+
+{% endblock %}

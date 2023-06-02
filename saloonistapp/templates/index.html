@@ -1,0 +1,189 @@
+{%load static%}
+<DOCTYPE html>
+<html>
+<head>
+    <title> Saloonist</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+
+    {% comment %} <link rel="stylesheet" href="style.css"> {% endcomment %}
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0
+    ,200;0,300;0400;0500;0,600;0,700;0,100;1,200;1,300;1,400;1,500;1,600;1,700&display
+    =swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    {% comment %} <link rel="stylesheet" href="{% static 'style.css'%}"> {% endcomment %}
+</head>
+<body>
+    <!----hero Section start---->
+    <div class="hero">
+        <nav>
+            <h2 class="logo">SALOON<span>IST</h2>
+            <ul>
+                <li><h5><a href="{%url 'registration'%}">Sign Up</a></h5></li>
+                <li><h5><a href="{%url 'login'%}">Login</a></h5></li>
+            </ul>
+
+        </nav>
+
+        <div class="content">
+            {% comment %} <h4> Hello, Welcome to</h4> {% endcomment %}
+            <h1>Saloon<span>ist</span></h1>
+            <h3>"We Offer you Confidence."</h3>
+            <div class="newslatter">
+                <a  href='{%url 'login'%}' style='margin-left:40%;margin-right:40%'><button>Book An Appointment</button></a>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!----About section start---->
+    <section class="about">
+    <div class="main">
+
+        <img src="{% static '/images/img1.jpg'%}">
+        <div class="about-text">
+
+            <h2>About us</h2>
+            <h5>Saloon <span>& Spa<span></h5>
+            <p>Calicut, Idukki, Kochi , Kottayam.
+                <br>
+               <h3 style='color:yellow'>A peek into our services </h3>
+               <p style="color:white; font-weight:bold">
+                We help you to create clean and confident looks with minimal design and
+                with great confidence and offer a great experiance.
+                We also have an interesting and wide variety of services , regardless of your budget
+
+                Our main goal is creating a confident society and provide a great saloon and spa experiance,
+                our company also focuses on creating employability for the socialneeds around our locality. This is our first ever initiative
+                and hoping all your participation  </p>
+                <br>
+
+            {% comment %} <button>Let's Talk</button> {% endcomment %}
+        </div>
+    </div>
+    </section>
+
+    <!-----service section start--------------->
+    <div class="service">
+        <div class="title">
+            <h2>Our Services</h2>
+        </div>
+
+        <div class="box">
+            <div class="card">
+                <i class="fas fa-user"></i>
+                <h5>Men</h5>
+                <div class="pra">
+                    <p>
+                        Cutting.
+                        Shaving.
+                        Face cleansing.
+                        Face moisturizing.
+                        Sunscreen.
+                        Shampoo.
+                        Conditioner.
+                        Hair styling gels.
+                        Hair oils
+                    </p>
+                    {% comment %} <p style="text-align: center;">
+                        <a class="button" href="#"> Book Appointment </a>
+                    </p> {% endcomment %}
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-user"></i>
+                <h5>Women</h5>
+                <div class="pra">
+                    <p>
+                        Hair treatment.
+                        Hair colouring.
+                        Face Moisturising.
+                        Sunscreens.
+                        Hair Serums.
+                        Face Cleansing.
+                        Hair Conditioning.
+                        Foot spa
+
+                    </p>
+                    {% comment %} <p style="text-align: center;">
+                        <a class="button" href="#"> Read More </a>
+                    </p> {% endcomment %}
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-user"></i>
+                <h5>Kids</h5>
+                <div class="pra">
+                    <p>
+                        Hair cut.
+                        Baby Scrub.
+                        Mix Kasthoori Rub.
+                        Massage with Oil.
+                        Body Packs.
+                        Beauty bath.
+                        Foot spa.
+                        New born baby traetments
+                    </p>
+                    {% comment %} <p style="text-align: center;">
+                        <a class="button" href="#"> Read More </a>
+                    </p> {% endcomment %}
+                </div>
+            </div>
+        </div>
+        <a  href='' style='margin-left:40%;margin-right:40%'><button>Book An Appointment</button></a>
+    </div>
+    {% comment %} <!------------Contact Me--------->
+    <div class="contact-me">
+        <p>Give us an Opportunity to create a wonderful experiance for you </p>
+        <a class="button-two" href="#">Contact Us</a>
+    </div> {% endcomment %}
+
+    <!-----------footer start-------->
+    <footer>
+        <p> Saloonist </p>
+        <p> To know more about our company , and our upcoming works and for other job related enquiries ,
+        - please click on the below link to subscribe to my channel: </p>
+        <div class="social">
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/saloonistapp"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+
+
+    {% comment %} <div class="container">
+        <form action="action_page.php">
+
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+          <label for="country">Place</label>
+          <select id="country" name="country">
+            <option value="Calicut">Calicut</option>
+            <option value="Kochi">Kochi</option>
+            <option value="Kottayam">Kottayam</option>
+            <option value="Idukki">Idukki</option>
+          </select>
+
+          <label for="subject">Feedback</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+          <input type="submit" value="Submit">
+
+        </form>
+      </div> {% endcomment %}
+
+</body>
+</html>

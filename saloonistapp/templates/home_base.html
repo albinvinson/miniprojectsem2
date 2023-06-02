@@ -1,0 +1,106 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title> SALON MANAGEMENT APP </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{%static './football/assets/img/favicon.png'%}" rel="icon">
+  <link href="{%static './football/assets/img/apple-touch-icon.png'%}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{%static './football/assets/vendor/animate.css/animate.min.css'%}" rel="stylesheet">
+  <link href="{%static './football/assets/vendor/aos/aos.css'%}" rel="stylesheet">
+  <link href="{%static './football/assets/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{%static './football/assets/vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <link href="{%static './football/assets/vendor/boxicons/css/boxicons.min.css'%}" rel="stylesheet">
+  <link href="{%static './football/assets/vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+  <link href="{%static './football/assets/vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <!-- Template Main CSS File -->
+  <link href="{%static 'css/home_base.css'%}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Restaurantly - v3.9.1
+  * Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+{% comment %} <a href="login.html">Login</a> {% endcomment %}
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+
+
+
+      <div class="languages d-none d-md-flex align-items-center">
+        <ul>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0"><a href="index.html">Saloonist</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><h3><a class="nav-link scrollto active" href="{%url 'home'%}">Home</a></h3></li>
+          {% comment %} <li><a class="nav-link scrollto" href="feedback">feedback</a></li> {% endcomment %}
+          <li><h3><a class="nav-link scrollto" href="booking">Booking</a></h3></li>
+          {% comment %} <li><a class="nav-link scrollto" href="user_details_view">Profile</a></li> {% endcomment %}
+          <li><h3><a class="nav-link scrollto" href="logout">Logout</a></h3></li>
+
+
+
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    {% block body %}{%endblock %}
+
+
+  </section>
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="{%static './football/assets/vendor/aos/aos.js'%}"></script>
+  <script src="{%static './football/asset/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{%static './football/assets/vendor/glightbox/js/glightbox.min.js'%}"></script>
+  <script src="{%static './football/assets/vendor/isotope-layout/isotope.pkgd.min.js'%}"></script>
+  <script src="{%static './football/assets/vendor/swiper/swiper-bundle.min.js'%}"></script>
+  <script src="{%static './football/assets/vendor/php-email-form/validate.js'%}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{%static './football/assets/js/main.js'%}"></script>
+
+</body>
+
+</html>
